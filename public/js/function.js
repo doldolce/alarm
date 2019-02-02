@@ -99,7 +99,12 @@ function alarm(){
 		document.title = rHoursStr+':'+rMinutesStr+':'+rSecondsStr;
 	} else {
 		// 時間になったらプッシュ通知でお知らせ。
-		Push.create('時間になりました！');
+		Push.create("アラーム", {
+			body: "時間になりました！",
+			icon: '/public/img/notification_icon.png',
+			// 通知があったら暫く消えないようにしたいのでとりあえず1時間に設定。
+			timeout: 3600000
+		});
 		timer.innerHTML = "時間になりました！";
 		document.title = "時間になりました！";
 		timeSetFlg = false;

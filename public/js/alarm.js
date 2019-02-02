@@ -4,8 +4,14 @@
 let now = new Date();
 let month = now.getMonth()+1;
 let days = now.getDate();
-//ページが読み込まれたときに発火し現在の日付を設定
-document.addEventListener("DOMContentLoaded", defaultDate, false);
+
+// ページが読み込まれたときに発火。
+document.addEventListener("DOMContentLoaded", function(){
+	// 現在日付を設定をする。
+	defaultDate();
+	// プッシュ通知許可ダイアログを表示。
+	Push.Permission.request();
+}, false);
 
 /**
  * アラーム時間初期化。
