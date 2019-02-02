@@ -101,9 +101,7 @@ function alarm(){
 		// 時間になったらプッシュ通知でお知らせ。
 		Push.create("アラーム", {
 			body: "時間になりました！",
-			icon: '/public/img/notification_icon.png',
-			// 通知があったら暫く消えないようにしたいのでとりあえず1時間に設定。
-			timeout: 3600000
+			icon: './img/notification_icon.png',
 		});
 		timer.innerHTML = "時間になりました！";
 		document.title = "時間になりました！";
