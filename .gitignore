@@ -4,6 +4,3 @@
 node_modules/
 package-lock.json
 package.json
-
-# firebase関連
-firebase.json
