@@ -1,0 +1,28 @@
+body{
+	width: 500px;
+	margin: 100px auto;
+}
+
+.set{
+	width: 900px;
+}
+
+.dateBox{
+	width: 500px;
+	margin: 0 0 13px 0;
+}
+
+#timer{
+	width: 500px;
+	display: none;
+	margin: 0 0 10px 0;
+}
+
+.buttons{
+	width: 500px;
+}
+
+p.note{
+	font-size: 85%;
+}
+

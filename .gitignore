@@ -1,0 +1,10 @@
+.DS_Store
+
+# npm関連
+node_modules/
+package-lock.json
+package.json
+
+# firebase関連
+firebase.json
+.firebaserc
